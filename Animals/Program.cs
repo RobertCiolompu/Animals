@@ -20,13 +20,15 @@ namespace Animals
             animals.Add(Rex);
 
             ListAnimals(animals);
+
+            Console.ReadKey();
         }
 
         private static void ListAnimals(IEnumerable<IAnimal> animals)
         {
             foreach (IAnimal animal in animals)
             {
-                Console.Write("The {0} makes {1}", animals.Name(), animals.Sound());
+                Console.WriteLine("The {0} makes {1}", animal.Name(), animal.Sound());
             }
         }
     }
