@@ -10,7 +10,15 @@ namespace Animals
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("This animal makes this sound.");
+            var animals = new List<IAnimal>();
+        }
+
+        private void ListAnimals(List<IAnimal> animals)
+        {
+            foreach (IAnimal element in animals)
+            {
+                Console.Write("The {0} makes {1}", animals.Name(), animals.Sound());
+            }
         }
     }
 }
