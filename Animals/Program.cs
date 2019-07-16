@@ -28,7 +28,7 @@ namespace Animals
         {
             foreach (IAnimal animal in animals)
             {
-                Console.WriteLine("The {0} makes {1}", animal.Name(), animal.Sound());
+                Console.WriteLine("The {0} makes {1}", animal.GetType().Name, animal.MakesSound());
             }
         }
     }

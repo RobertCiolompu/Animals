@@ -8,11 +8,7 @@ namespace Animals
 {
     class Dog : IAnimal
     {
-        public string Name()
-        {
-            return "Dog";
-        }
-        public string Sound()
+        public string MakesSound()
         {
             return "Ham!";
         }

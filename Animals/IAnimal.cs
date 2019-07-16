@@ -8,7 +8,6 @@ namespace Animals
 {
     interface IAnimal
     {
-        string Name();
-        string Sound();
+        string MakesSound();
     }
 }
